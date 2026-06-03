@@ -1,0 +1,6 @@
+{
+  "name": "Deepfake & Scam Guardian",
+  "description": "A comprehensive real-time guardian app that detects suspicious messaging patterns and simulates overriding deepfake video calls to unmask the scammers.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
