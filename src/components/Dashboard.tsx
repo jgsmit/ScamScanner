@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, AlertTriangle, PhoneCall, MessageSquareQuote, Shield, ShieldAlert, BadgeInfo, Cpu, Eye, TrendingUp, XCircle, Activity, Terminal, ArrowUpRight, X, ShieldAlert as ShieldX, Check, Settings, Sliders } from 'lucide-react';
+import ThreatHistoryLog from './ThreatHistoryLog';
 
 interface DashboardProps {
   onNavigate: (tab: 'dashboard' | 'scanner' | 'call' | 'flutter') => void;
@@ -651,6 +652,9 @@ export default function Dashboard({ onNavigate, activeTab }: DashboardProps) {
           </div>
         </div>
       </div>
+
+      {/* Threat Interception History Log */}
+      <ThreatHistoryLog />
 
       {/* Scam Center Intel Insights */}
       <div className="bg-slate-900 border border-slate-800 rounded-xl p-5" id="scam-center-intel">
